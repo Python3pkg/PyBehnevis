@@ -12,8 +12,11 @@ setup PyBehnevis
 
 from setuptools import setup, find_packages
 
-with open('README','r') as f:
-  readme = f.read()
+try:
+  with open('README','r') as f:
+    readme = f.read()
+except Exception:
+  readme = 'dependency-free wrapper for Behnevis API'
 
 setup(
   name='pybehnevis',
