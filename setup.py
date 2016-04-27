@@ -20,7 +20,7 @@ except Exception:
 
 setup(
   name='pybehnevis',
-  version='0.1.1',
+  version='0.1.2',
   description='python wrapper for Behnevis API',
   long_description=readme,
   author='Mohammad Amin Sameti',
