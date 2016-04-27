@@ -12,20 +12,12 @@ setup PyBehnevis
 
 from setuptools import setup, find_packages
 
-
-with open('README.md') as f:
+with open('README','r') as f:
   readme = f.read()
-
-# a litte process, if markdown is installed
-try:
-  from markdown import markdown
-  readme = markdown(readme)
-except Exception:
-  pass
 
 setup(
   name='pybehnevis',
-  version='0.1',
+  version='0.1.1',
   description='python wrapper for Behnevis API',
   long_description=readme,
   author='Mohammad Amin Sameti',
